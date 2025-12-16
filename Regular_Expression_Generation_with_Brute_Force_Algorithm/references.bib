@@ -1,0 +1,132 @@
+@misc{cloudflare2019,
+    author = {John Graham-Cumming},
+    title = {Details of the Cloudflare outage on July 2, 2019},
+    year = {2019},
+    month = {July},
+    day = {12},
+    url = {https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/},
+}
+@thesis{hassan2022,
+    author = {Hassan, Sk Adnan},
+    title = {Theory and Patterns for Avoiding Regex Denial of Service},
+    school = {Virginia Tech},
+    year = {2022},
+    month = {June},
+    type = {Master's Thesis},
+}
+@misc{huggingface,
+  author = {innovatorved},
+  title = {Regex Dataset},
+  publisher = {Hugging Face},
+  url = {https://huggingface.co/datasets/innovatorved/regex_dataset/viewer/default/train?p=1&views%5B%5D=train},
+}
+
+@article{Zheng2021,
+  author = {Li-Xiao Zheng, Shuai Ma, Zu-Xi Chen, Xiang-Yu Luo},
+  title = {Ensuring the Correctness of Regular Expressions: A Review},
+  journal = {International Journal of Automation and Computing},
+  volume = {18},
+  number = {4},
+  pages = {521--535},
+  year = {2021},
+  month = {August},
+  doi = {10.1007/s11633-021-1301-4},
+}
+@inproceedings{zouhar-etal-2023-formal,
+    title = "A Formal Perspective on Byte-Pair Encoding",
+    author = "Zouhar, Vil{\'e}m  and
+      Meister, Clara  and
+      Gastaldi, Juan  and
+      Du, Li  and
+      Vieira, Tim  and
+      Sachan, Mrinmaya  and
+      Cotterell, Ryan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.38/",
+    doi = "10.18653/v1/2023.findings-acl.38",
+    pages = "598--614",
+    abstract = "Byte-Pair Encoding (BPE) is a popular algorithm used for tokenizing data in NLP, despite being devised initially as a compression method.BPE appears to be a greedy algorithm at face value, but the underlying optimization problem that BPE seeks to solve has not yet been laid down. We formalize BPE as a combinatorial optimization problem. Via submodular functions, we prove that the iterative greedy version is a 1/sigma*(1-e(-sigma))-approximation of an optimal merge sequence, where sigma is the total backward curvature with respect to the optimal merge sequence. Empirically the lower bound of the approximation is approx0.37.We provide a faster implementation of BPE which improves the runtime complexity from O(NM) to O(N log M), where N is the sequence length and M is the merge count. Finally, we optimize the brute-force algorithm for optimal BPE using memoization."
+}
+
+@inproceedings{geneticprogramming,
+author = {Bartoli, Alberto and Davanzo, Giorgio and De Lorenzo, Andrea and Mauri, Marco and Medvet, Eric and Sorio, Enrico},
+title = {Automatic generation of regular expressions from examples with genetic programming},
+year = {2012},
+isbn = {9781450311786},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2330784.2331000},
+doi = {10.1145/2330784.2331000},
+abstract = {We explore the practical feasibility of a system based on genetic programming (GP) for the automatic generation of regular expressions. The user describes the desired task by providing a set of labeled examples, in the form of text lines. The system uses these examples for driving the evolutionary search towards a regular expression suitable for the specified task. Usage of the system should require neither familiarity with GP nor with regular expressions syntax. In our GP implementation each individual represents a syntactically correct regular expression. We performed an experimental evaluation on two different extraction tasks applied to real-world datasets and obtained promising results in terms of precision and recall, even in comparison to an earlier state-of-the-art proposal.},
+booktitle = {Proceedings of the 14th Annual Conference Companion on Genetic and Evolutionary Computation},
+pages = {1477–1478},
+numpages = {2},
+keywords = {genetic programming, regular expression},
+location = {Philadelphia, Pennsylvania, USA},
+series = {GECCO '12}
+}
+
+@inproceedings{deterministic,
+author = {Groz, Benot\^{\i}t and Maneth, Sebastian and Staworko, Slawek},
+title = {Deterministic regular expressions in linear time},
+year = {2012},
+isbn = {9781450312486},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2213556.2213566},
+doi = {10.1145/2213556.2213566},
+abstract = {Deterministic regular expressions are widely used in XML processing. For instance, all regular expressions in DTDs and XML Schemas are required to be deterministic. In this paper we show that determinism of a regular expression e can be tested in linear time. The best known algorithms, based on the Glushkov automaton, require O(σ|e|) time, where σ is the number of distinct symbols in e. We further show that matching a word w against an expression e can be achieved in combined linear time O(|e|+|w|), for a wide range of deterministic regular expressions: (i) star-free (for multiple input words), (ii) bounded-occurrence, i.e., expressions in which each symbol appears a bounded number of times, and (iii) bounded plus-depth, i.e., expressions in which the nesting depth of alternating plus (union) and concatenation symbols is bounded. Our algorithms use a new structural decomposition of the parse tree of e. For matching arbitrary deterministic regular expressions we present an O(|e| + |w|log log|e|) time algorithm.},
+booktitle = {Proceedings of the 31st ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems},
+pages = {49–60},
+numpages = {12},
+keywords = {deterministic regular expression, dtd, glushkov automaton, linear time, xml schema},
+location = {Scottsdale, Arizona, USA},
+series = {PODS '12}
+}
+
+@inproceedings{Becchi2007,
+author = {Becchi, Michela and Crowley, Patrick},
+title = {An improved algorithm to accelerate regular expression evaluation},
+year = {2007},
+isbn = {9781595939456},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1323548.1323573},
+doi = {10.1145/1323548.1323573},
+abstract = {Modern network intrusion detection systems need to perform regular expression matching at line rate in order to detect the occurrence of critical patterns in packet payloads. While deterministic finite automata (DFAs) allow this operation to be performed in linear time, they may exhibit prohibitive memory requirements. In [9], Kumar et al. propose Delayed Input DFAs (D2FAs), which provide a trade-off between the memory requirements of the compressed DFA and the number of states visited for each character processed, which corresponds directly to the memory bandwidth required to evaluate regular expressions.In this paper we introduce a general compression technique that results in at most 2N state traversals when processing a string of length N. In comparison to the D2FA approach, our technique achieves comparable levels of compression, with lower provable bounds on memory bandwidth (or greater compression for a given bandwidth bound). Moreover, our proposed algorithm has lower complexity, is suitable for scenarios where a compressed DFA needs to be dynamically built or updated, and fosters locality in the traversal process. Finally, we also describe a novel alphabet reduction scheme for DFA-based structures that can yield further dramatic reductions in data structure size.},
+booktitle = {Proceedings of the 3rd ACM/IEEE Symposium on Architecture for Networking and Communications Systems},
+pages = {145–154},
+numpages = {10},
+keywords = {DFA, deep packet inspection, regular expressions},
+location = {Orlando, Florida, USA},
+series = {ANCS '07}
+}
+
+@INPROCEEDINGS{Larson2018,
+  author={Larson, Eric},
+  booktitle={2018 IEEE 18th International Working Conference on Source Code Analysis and Manipulation (SCAM)}, 
+  title={[Research Paper] Automatic Checking of Regular Expressions}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={225-234},
+  keywords={Computer bugs;Particle separators;Test pattern generators;Engines;Presses;Tools;regular expressions;software bug detection;testing},
+  doi={10.1109/SCAM.2018.00034}}
+
+@INPROCEEDINGS{Li2009,
+  author={Li, Nuo and Xie, Tao and Tillmann, Nikolai and de Halleux, Jonathan and Schulte, Wolfram},
+  booktitle={2009 IEEE/ACM International Conference on Automated Software Engineering}, 
+  title={Reggae: Automated Test Generation for Programs Using Complex Regular Expressions}, 
+  year={2009},
+  volume={},
+  number={},
+  pages={515-519},
+  keywords={Automatic testing;Logic testing;Space exploration;Engines;Software testing;USA Councils;Manuals;Impedance matching;Software engineering;Software measurement;test generation;dynamic symbolic execution;string generation},
+  doi={10.1109/ASE.2009.67}}
