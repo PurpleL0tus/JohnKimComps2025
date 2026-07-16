@@ -101,12 +101,6 @@ Results were averaged from 10 trials. The results show that the brute force algo
 
 ---
 
-## User Interface
-
-<img src="Regular_Expression_Generation_with_Brute_Force_Algorithm/UI pic.png" width="320"/>
-
----
-
 ## Quick Start
 
 ```bash
@@ -118,15 +112,15 @@ python main.py
 
 ## Project Structure
 
-```
-main.py              # entry point — keyword processing + brute-force loop
-keywords.py          # keyword pre-processing and merging
-tools.py             # token pool and regex validation
-math_stuff.py        # normal distribution for token count sampling
-regex_generator.py   # standalone valid-regex generator
-random_generate.py   # brute-force benchmark experiment
-BPEer.py             # byte pair encoding on regex corpus
-corpus.py            # loads data.json and builds corpus.txt
-user_interface.py    # tkinter GUI
-tests.py             # test suite
-```
+| File | Description |
+|---|---|
+| `main.py` | Entry point — keyword processing + brute-force loop |
+| `keywords.py` | Keyword pre-processing and merging |
+| `tools.py` | Token pool and regex validation |
+| `math_stuff.py` | Normal distribution for token count sampling |
+| `regex_generator.py` | Standalone valid-regex generator |
+| `random_generate.py` | Brute-force benchmark experiment |
+| `BPEer.py` | Byte pair encoding on regex corpus |
+| `corpus.py` | Loads data.json and builds corpus.txt |
+| `user_interface.py` | Tkinter GUI |
+| `tests.py` | Test suite |
